@@ -1,16 +1,27 @@
 <template>
-  <section class="py-10 bg-white">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+  <section class="py-16 sm:py-18 bg-white">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
       <!-- Header -->
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <div class="inline-block bg-orange-100 px-4 py-2 rounded-lg mb-4">
-          <h2 class="text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl">
-            Recent Launches
-          </h2>
+      <div class="flex items-center justify-between mb-12">
+        <div>
+          <div class="inline-block bg-blue-100 px-4 py-2 rounded-lg mb-4">
+            <h2 class="text-3xl font-bold tracking-tight text-blue-600 sm:text-4xl">
+              Recent Launches
+            </h2>
+          </div>
+          <p class="mt-4 text-lg leading-8 text-gray-600">
+            Discover the latest products launched by Kerala's makers.
+          </p>
         </div>
-        <p class="mt-4 text-lg leading-8 text-gray-600">
-          Discover the latest products launched by Kerala's makers.
-        </p>
+        <a 
+          href="https://launches.kph.club" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200 whitespace-nowrap"
+        >
+          <span>View all launches</span>
+          <ArrowUpRight class="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+        </a>
       </div>
 
       <!-- Launches Grid -->
@@ -24,29 +35,29 @@
             :style="`animation-delay: ${idx * 120}ms`"
           >
             <div class="flex flex-col h-full">
-              <div class="flex gap-2 mb-3">
-                <div class="bg-orange-100 px-2.5 py-1 rounded-md">
-                  <span class="text-sm font-medium text-orange-700 flex items-center gap-1">
+              <div class="mb-3">
+                <div class="inline-block bg-blue-100 px-2.5 py-1 rounded-md">
+                  <span class="text-sm font-medium text-blue-600 flex items-center gap-1">
                     <CalendarDays class="inline-block h-4 w-4 mr-1" />
                     {{ formatDate(launch['Date']) }}
                   </span>
                 </div>
-                <div class="bg-emerald-100 px-2.5 py-1 rounded-md">
-                  <span class="text-sm font-medium text-emerald-700 flex items-center gap-1">
-                    <User class="inline-block h-4 w-4 mr-1" />
-                    {{ launch['Maker'] }}
-                  </span>
-                </div>
               </div>
-              <h3 class="text-lg font-semibold text-gray-900 group-hover:text-orange-700 mb-2 leading-tight transition-colors duration-200">
+              <h3 class="text-lg font-semibold text-gray-900 group-hover:text-blue-600 mb-2 leading-tight transition-colors duration-200">
                 {{ launch['Product Name'] }}
               </h3>
               <p class="text-sm text-gray-600 mb-4 flex-1">{{ launch['Product Description'] }}</p>
-              <div class="mt-auto flex items-center justify-end">
+              <div class="mt-auto flex items-center justify-between">
+                <div class="inline-block">
+                  <span class="text-sm font-medium text-gray-600 flex items-center gap-1">
+                    <User class="inline-block h-4 w-4" />
+                    {{ launch['Maker'] }}
+                  </span>
+                </div>
                 <a v-if="launch['Product Link']" 
                   :href="ensureHttps(launch['Product Link'])" 
                   target="_blank" rel="noopener noreferrer"
-                  class="inline-flex items-center gap-1 text-orange-600 hover:text-orange-800 font-medium text-sm group transition-colors duration-200"
+                  class="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 font-medium text-sm group transition-colors duration-200"
                 >
                   <span>View</span>
                   <ArrowUpRight class="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -54,29 +65,16 @@
               </div>
             </div>
             <!-- Hover line effect -->
-            <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-500"></div>
+            <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-500"></div>
             <!-- Icon micro interaction -->
             <div class="absolute top-5 right-5 transform-gpu group-hover:rotate-12 transition-transform duration-300">
-              <Hammer class="h-5 w-5 text-orange-600" />
+              <Hammer class="h-5 w-5 text-blue-600" />
             </div>
           </div>
         </div>
       </div>
 
-      <!-- CTA Button -->
-      <div class="text-center mt-12">
-        <div class="inline-block bg-orange-50 p-1 rounded-2xl">
-          <a 
-            href="https://launches.kph.club" 
-            target="_blank"
-            rel="noopener noreferrer"
-            class="group inline-flex items-center gap-3 rounded-xl bg-black px-8 py-4 text-base font-semibold text-white hover:bg-gray-900 transition-all duration-300"
-          >
-            <span>View All Launches</span>
-            <ArrowUpRight class="h-5 w-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </a>
-        </div>
-      </div>
+
     </div>
   </section>
 </template>

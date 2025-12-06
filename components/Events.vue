@@ -1,13 +1,13 @@
 <template>
   <!-- Warm light background -->
-  <section class="py-10 bg-sky-100">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+  <section class="py-16 sm:py-18 bg-blue-600">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
       <!-- Header -->
       <div class="text-center max-w-2xl mx-auto mb-12">
-        <h2 class="text-3xl font-bold tracking-tight text-sky-600 sm:text-4xl">
-          Join the movement of creators, dreamers, and doers from Kerala
-        </h2>
-        <p class="mt-4 text-lg leading-8 text-gray-600">
+        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+           Join the movement of creators, dreamers, and doers from Kerala
+         </h2>
+         <p class="mt-4 text-lg leading-8 text-blue-100">
           We host invite-only meet-ups to accelerate turning bold ideas into successful products.
         </p>
       </div>
@@ -15,7 +15,7 @@
       <!-- Events Grid -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
         <div v-for="event in events" :key="event.id" 
-          class="group bg-white rounded-xl overflow-hidden border hover:shadow-sm transition-all duration-300"
+          class="group bg-white rounded-xl overflow-hidden hover:shadow-sm transition-all duration-300"
         >
           <div class="aspect-[4/3] overflow-hidden border-b">
             <img 
@@ -41,20 +41,7 @@
         </div>
       </div>
 
-      <!-- CTA -->
-      <div class="text-center mt-12">
-        <div class="inline-block p-1 rounded-2xl">
-          <NuxtLink 
-            to="/meetups"
-            class="group inline-flex items-center gap-3 rounded-xl bg-black px-8 py-4 text-base font-semibold text-white hover:bg-gray-900 transition-all duration-300"
-          >
-            <CalendarDays class="h-5 w-5" />
-            <span>View All Meetups</span>
-            <ArrowRight class="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-          </NuxtLink>
-        </div>
-        <p class="mt-4 text-sm text-gray-500">Join our next meetup and connect with fellow builders</p>
-      </div>
+
     </div>
   </section>
 </template>

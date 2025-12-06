@@ -1,21 +1,32 @@
 <template>
   <!-- Reduce section padding -->
-  <section class="py-10 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+  <section class="py-16 sm:py-18 bg-white">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
       <!-- Header -->
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <div class="inline-block bg-sky-100 px-4 py-2 rounded-lg mb-4">
-          <h2 class="text-3xl font-bold tracking-tight text-sky-600 sm:text-4xl">
-            Knowledge Base
-          </h2>
+      <div class="flex items-center justify-between mb-12">
+        <div>
+          <div class="inline-block bg-blue-100 px-4 py-2 rounded-lg mb-4">
+            <h2 class="text-3xl font-bold tracking-tight text-blue-600 sm:text-4xl">
+              Knowledge Base
+            </h2>
+          </div>
+          <p class="mt-4 text-lg leading-8 text-gray-600">
+            Discover insights, journeys, and lessons from creators and innovators.
+          </p>
         </div>
-        <p class="mt-4 text-lg leading-8 text-gray-600">
-          Discover insights, journeys, and lessons from creators and innovators.
-        </p>
+        <a 
+          href="https://wiki.kph.club"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200 whitespace-nowrap"
+        >
+          <span>Explore wiki</span>
+          <ArrowRight class="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+        </a>
       </div>
 
       <!-- Wiki Articles -->
-      <div class="grid grid-cols-1 gap-6 mb-12 max-w-2xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
         <article v-for="(article, index) in articles" :key="article.id"
           class="relative group bg-white rounded-xl border p-5 hover:shadow-sm transition-all duration-300 opacity-0 animate-slide-in"
           :style="`animation-delay: ${index * 150}ms`"
@@ -43,27 +54,11 @@
               </p>
             </div>
           </div>
-          <!-- Hover line effect -->
-          <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-500 group-hover:w-full transition-all duration-500"></div>
+
         </article>
       </div>
 
-      <!-- CTA -->
-      <div class="text-center mt-12">
-        <div class="inline-block bg-emerald-50 p-1 rounded-2xl">
-          <a 
-            href="https://wiki.kph.club"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="group inline-flex items-center gap-3 rounded-xl bg-black px-8 py-4 text-base font-semibold text-white hover:bg-gray-900 transition-all duration-300"
-          >
-            <BookOpen class="h-5 w-5" />
-            <span>Explore Wiki</span>
-            <ArrowRight class="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-          </a>
-        </div>
-        <p class="mt-4 text-sm text-gray-500">Access our knowledge base of guides and resources</p>
-      </div>
+
     </div>
   </section>
 </template>
