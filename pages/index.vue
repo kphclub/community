@@ -1,14 +1,16 @@
 <template>
   <div>
     <Navbar />
-   <Hero />
+    <Hero />
     <LogoScroll />
+    
     <FoundingStory />
     <RecentLaunches />
     <Podcasts />
     <Events />
     <Wiki />
     <Programs />
+    
     <Footer />
   </div>
 </template>

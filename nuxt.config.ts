@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxtjs/sitemap',
     'nuxt-umami',
+    'motion-v/nuxt',
   ],
   umami: {
     id: 'ac831b9d-bc42-4c1c-b187-5a78c30a1cf3',
