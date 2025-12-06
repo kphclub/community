@@ -22,16 +22,6 @@ export default defineNuxtConfig({
         url: '/',
         changefreq: 'weekly',
         priority: 1.0
-      },
-      {
-        url: '/accelerator',
-        changefreq: 'weekly',
-        priority: 0.9
-      },
-      {
-        url: '/meetups',
-        changefreq: 'weekly',
-        priority: 0.8
       }
     ],
     exclude: [
@@ -57,7 +47,7 @@ export default defineNuxtConfig({
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Nunito Sans', 'sans-serif'],
+            sans: ['Work Sans', 'sans-serif'],
             serif: ['Merriweather', 'serif'],
           },
           colors: {
@@ -118,7 +108,7 @@ export default defineNuxtConfig({
   fonts: {
     families: [
       {
-        name: 'Nunito Sans',
+        name: 'Work Sans',
         weights: [400, 500, 600, 700],
       },
       {

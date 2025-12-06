@@ -15,7 +15,7 @@
       </div>
 
       <!-- Wiki Articles -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <div class="grid grid-cols-1 gap-6 mb-12 max-w-2xl mx-auto">
         <article v-for="(article, index) in articles" :key="article.id"
           class="relative group bg-white rounded-xl border p-5 hover:shadow-sm transition-all duration-300 opacity-0 animate-slide-in"
           :style="`animation-delay: ${index * 150}ms`"

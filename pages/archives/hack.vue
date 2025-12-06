@@ -237,7 +237,7 @@ useHead({
     { name: 'description', content: 'Join the KPH Hackathon on September 19-21, 2025. Build and launch your product with funding, mentorship, GTM support, and exciting prizes. Make Kerala the best place to build successful products.' },
     { property: 'og:title', content: 'KPH Hackathon - Build and Launch | September 19-21, 2025' },
     { property: 'og:description', content: 'Join the KPH Hackathon on September 19-21, 2025. Build and launch your product with funding, mentorship, GTM support, and exciting prizes.' },
-    { property: 'og:url', content: 'https://kph.club/hack' },
+    { property: 'og:url', content: 'https://kph.club/archives/hack' },
     { property: 'og:image', content: '/accelerator-og.png' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },

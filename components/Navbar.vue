@@ -19,18 +19,6 @@
 
         <!-- Desktop navigation -->
         <div class="hidden md:flex md:space-x-8">
-          <NuxtLink to="/hack" class="text-gray-700 hover:text-emerald-600">
-            Hackathon
-          </NuxtLink>
-          <NuxtLink to="/accelerator" class="text-gray-700 hover:text-emerald-600">
-            Accelerator
-          </NuxtLink>
-          <a href="https://kph.vc" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-emerald-600">
-            Investor Network
-          </a>
-          <NuxtLink to="/meetups" class="text-gray-700 hover:text-emerald-600">
-            Meetups
-          </NuxtLink>
           <a href="https://nas.io/kphjobs" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-emerald-600">
             Jobs
           </a>
@@ -38,10 +26,13 @@
             Wiki
           </a>
           <a href="https://launches.kph.club" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-orange-600">
-            Launches
+            Product Launches
           </a>
           <a href="https://blog.kph.club" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-emerald-600">
             Blog
+          </a>
+          <a href="https://learn.kph.club" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-emerald-600">
+            Masterclass
           </a>
         </div>
 
@@ -65,18 +56,6 @@
       <!-- Mobile menu -->
       <div v-show="isOpen" class="md:hidden">
         <div class="pt-2 pb-3 space-y-1">
-          <NuxtLink to="/hack" class="block px-3 py-2 text-gray-700 hover:text-emerald-600">
-            Hackathon
-          </NuxtLink>
-          <NuxtLink to="/accelerator" class="block px-3 py-2 text-gray-700 hover:text-emerald-600">
-            Accelerator
-          </NuxtLink>
-          <a href="https://kph.vc" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 text-gray-700 hover:text-emerald-600">
-            Investor Network
-          </a>
-          <NuxtLink to="/meetups" class="block px-3 py-2 text-gray-700 hover:text-emerald-600">
-            Meetups
-          </NuxtLink>
           <a href="https://nas.io/kphjobs" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 text-gray-700 hover:text-emerald-600">
             Jobs
           </a>
@@ -88,6 +67,9 @@
           </a>
           <a href="https://blog.kph.club" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 text-gray-700 hover:text-emerald-600">
             Blog
+          </a>
+          <a href="https://learn.kph.club" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 text-gray-700 hover:text-emerald-600">
+            Masterclass
           </a>
         </div>
         <div class="pt-4 pb-3 border-t border-gray-200">
@@ -116,4 +98,4 @@ import { Instagram, Twitter, Youtube, MessageCircle, Menu, X, Linkedin } from 'l
 import { ref } from 'vue'
 
 const isOpen = ref(false)
-</script> 
+</script>

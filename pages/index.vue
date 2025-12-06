@@ -1,12 +1,7 @@
 <template>
   <div>
     <Navbar />
-<AnnouncementBanner
-  message="🚀 KPH founder’s PerfAgents acquired by Testing Mavens in key deal"
-  type="success"
-  cta="Read More"
-  ctaLink="https://blog.kph.club/big-news-from-the-kph-community-testing-mavens-acquires-perfagents"
-/>    <Hero />
+   <Hero />
     <LogoScroll />
     <FoundingStory />
     <RecentLaunches />
