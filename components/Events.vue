@@ -13,30 +13,29 @@
       </div>
 
       <!-- Events Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
         <div v-for="event in events" :key="event.id" 
-          class="group bg-white rounded-xl overflow-hidden hover:shadow-sm transition-all duration-300"
+          class="group relative aspect-square overflow-hidden rounded-lg cursor-pointer"
         >
-          <div class="aspect-[4/3] overflow-hidden border-b">
-            <img 
-              :src="event.image"
-              :alt="event.title"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <div class="p-5">
-            <div class="inline-flex items-center gap-2">
-              <div class="bg-orange-100 px-2.5 py-1 rounded-md">
-                <time class="text-sm font-medium text-orange-700">{{ event.date }}</time>
-              </div>
-              <div class="bg-emerald-100 px-2.5 py-1 rounded-md">
-                <span class="text-sm font-medium text-emerald-700">{{ event.location }}</span>
-              </div>
-            </div>
-            <h3 class="mt-3 text-xl font-semibold text-gray-900 leading-tight group-hover:text-gray-700">
+          <img 
+            :src="event.image"
+            :alt="event.title"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          />
+          <!-- Overlay -->
+          <div class="absolute inset-0 bg-blue-600/0 group-hover:bg-blue-600/60 transition-colors duration-300 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h3 class="text-xl font-semibold text-white">
               {{ event.title }}
             </h3>
-            <p class="mt-2 text-sm text-gray-600">{{ event.description }}</p>
+            <p class="mt-2 text-sm text-blue-100">{{ event.description }}</p>
+            <div class="flex gap-2 mt-3">
+              <div class="bg-white px-2.5 py-1 rounded-md">
+                <time class="text-xs font-medium text-blue-600">{{ event.date }}</time>
+              </div>
+              <div class="bg-white px-2.5 py-1 rounded-md">
+                <span class="text-xs font-medium text-blue-600">{{ event.location }}</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

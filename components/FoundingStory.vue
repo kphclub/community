@@ -2,11 +2,11 @@
   <!-- Reduce section padding -->
   <section class="py-16 sm:py-18 bg-white">
     <div class="max-w-5xl mx-auto px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <!-- Image container -->
-        <div
-          class="relative h-[300px] lg:h-[350px] rounded-xl overflow-hidden border shadow-sm"
-        >
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+         <!-- Image container -->
+         <div
+           class="relative h-[250px] sm:h-[300px] lg:h-[350px] rounded-xl overflow-hidden border shadow-sm"
+         >
           <img
             src="/felix-josemon.jpg"
             alt="Felix Josemon, founder of KPH"

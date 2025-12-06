@@ -2,7 +2,7 @@
   <section class="py-16 sm:py-18 bg-white">
     <div class="max-w-5xl mx-auto px-6 lg:px-8">
       <!-- Header -->
-      <div class="flex items-center justify-between mb-12">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 gap-4">
         <div>
           <div class="inline-block bg-blue-100 px-4 py-2 rounded-lg mb-4">
             <h2 class="text-3xl font-bold tracking-tight text-blue-600 sm:text-4xl">
