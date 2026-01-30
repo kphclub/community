@@ -40,7 +40,7 @@
         </Motion>
 
         <!-- Right: Features as bullets -->
-        <div class="space-y-4 flex flex-col items-center lg:items-start">
+        <div class="space-y-4 flex flex-col items-center lg:items-end">
           <Motion
             v-for="(feature, index) in features"
             :key="feature.label"

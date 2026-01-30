@@ -50,6 +50,7 @@
         <div class="flex flex-col md:flex-row justify-between items-center gap-4">
           <p class="text-sm text-white">
              © {{ new Date().getFullYear() }} KPH. All rights reserved.
+             <span class="ml-4 text-xs text-blue-200">built by <a href="https://kiranjohns.com" target="_blank" rel="noopener noreferrer" class="hover:text-white underline">Kiran</a></span>
            </p>
         </div>
       </div>
