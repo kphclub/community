@@ -40,8 +40,7 @@
                             limited!</p>
                     </div>
                 </div>
-        </div>
-        </section>
+            </section>
 
         <!-- WHY KPH HACKATHON (Podcasts.vue style) -->
         <section class="py-10 bg-white">
