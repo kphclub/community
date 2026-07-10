@@ -24,7 +24,7 @@
                         </h1>
                         <!-- Animated subtitle with delay -->
                         <p class="mt-8 text-xl leading-8 text-gray-600 animate-fade-in animation-delay-200">
-                            19,20,21 September 2025
+                            September 2026
                         </p>
                         <!-- JOIN NOW CTA -->
                         <div class="mt-8">
