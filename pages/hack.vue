@@ -20,7 +20,6 @@
           
           <!-- Logo Image -->
           <img
-            src="/kph-main-logo.png"
             alt="KPH Loading"
             class="h-8 w-auto object-contain drop-shadow-[0_0_12px_rgba(168,85,247,0.8)] animate-pulse"
           />
@@ -222,25 +221,6 @@
             <span>Why Join</span>
           </a>
         </div>
-
-        <!-- INTERACTIVE TRACK BADGES -->
-        <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
-          <div
-            v-for="track in tracks"
-            :key="track.id"
-            @mouseenter="activeTrack = track.id"
-            @mouseleave="activeTrack = null"
-            :class="[
-              'flex items-center gap-2 px-4 py-2 rounded-full border text-xs font-mono font-medium backdrop-blur-md transition-all duration-300 cursor-pointer',
-              track.bg,
-              activeTrack === track.id ? 'scale-105 shadow-[0_0_20px_rgba(168,85,247,0.4)] border-white/50 text-white' : 'text-neutral-300 opacity-90'
-            ]"
-          >
-            <component :is="track.icon" :class="['h-3.5 w-3.5', track.color]" />
-            <span>{{ track.name }}</span>
-          </div>
-        </div>
-
         <p class="mt-4 text-xs font-medium text-purple-300/90 tracking-wide">
           Hurry up, spots are limited!
         </p>
