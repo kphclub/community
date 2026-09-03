@@ -3,16 +3,16 @@
     <!-- FUTURISTIC PAGE PRELOADER OVERLAY -->
     <div
       :class="[
-        'fixed inset-0 z-[100] bg-[#030306] flex flex-col items-center justify-center transition-all duration-700 ease-in-out',
+        'fixed inset-0 z-[100] bg-[#030306] flex flex-col items-center justify-center p-4 transition-all duration-700 ease-in-out',
         isLoading ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-105 pointer-events-none'
       ]"
     >
       <!-- Background Ambient Glow -->
-      <div class="absolute w-72 h-72 rounded-full bg-purple-600/20 blur-3xl animate-pulse"></div>
+      <div class="absolute w-80 h-80 rounded-full bg-purple-600/20 blur-3xl animate-pulse"></div>
 
       <!-- Preloader Graphic & Spinner -->
-      <div class="relative z-10 flex flex-col items-center">
-        <div class="relative flex items-center justify-center w-24 h-24 mb-6">
+      <div class="relative z-10 flex flex-col items-center max-w-md text-center">
+        <div class="relative flex items-center justify-center w-20 h-20 mb-4">
           <!-- Outer Rotating Gradient Ring -->
           <div class="absolute inset-0 rounded-full border-2 border-transparent border-t-purple-400 border-r-pink-400 animate-spin"></div>
           <!-- Inner Reverse Rotating Cyan Ring -->
@@ -22,26 +22,42 @@
           <img
             src="/kph-main-logo.png"
             alt="KPH Loading"
-            class="h-9 w-auto object-contain drop-shadow-[0_0_12px_rgba(168,85,247,0.8)] animate-pulse"
+            class="h-8 w-auto object-contain drop-shadow-[0_0_12px_rgba(168,85,247,0.8)] animate-pulse"
           />
         </div>
 
         <!-- Animated Text -->
-        <span class="font-chakra-bold font-bold text-2xl tracking-wider text-white mb-2">
+        <span class="font-chakra-bold font-bold text-2xl tracking-wider text-white mb-3">
           KPH<span class="text-purple-400">.</span>hack
         </span>
 
+        <!-- CLEAN ANIMATED BUILDER QUOTE CARD -->
+        <div class="w-full bg-[#0c0b1a]/80 border border-purple-500/25 rounded-2xl p-5 mb-5 backdrop-blur-xl shadow-[0_0_30px_rgba(168,85,247,0.15)] relative overflow-hidden transition-all duration-500">
+          <div class="absolute top-2 left-3 opacity-20 text-purple-400">
+            <Quote class="w-5 h-5 rotate-180" />
+          </div>
+          <div class="relative z-10 py-0.5 px-2">
+            <p :key="`quote-${currentQuoteIndex}`" class="text-sm sm:text-base font-medium italic text-neutral-200 leading-relaxed animate-quote-fade">
+              "{{ currentQuote.text }}"
+            </p>
+            <span :key="`author-${currentQuoteIndex}`" class="block mt-2.5 text-xs font-mono font-bold text-purple-300 tracking-wider uppercase animate-quote-fade">
+              — {{ currentQuote.author }}
+            </span>
+          </div>
+        </div>
+
         <!-- Percentage Counter Bar -->
-        <div class="w-48 h-1 bg-white/10 rounded-full overflow-hidden mb-3">
+        <div class="w-56 h-1.5 bg-white/10 rounded-full overflow-hidden mb-3">
           <div
-            class="h-full bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-400 transition-all duration-300 rounded-full"
+            class="h-full bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-400 transition-all duration-300 rounded-full shadow-[0_0_12px_rgba(168,85,247,0.8)]"
             :style="{ width: `${progress}%` }"
           ></div>
         </div>
 
-        <span class="font-mono text-xs text-purple-300 tracking-widest uppercase">
-          Loading {{ progress }}%
-        </span>
+        <div class="flex items-center gap-2 font-mono text-xs text-purple-300 tracking-widest uppercase">
+          <Sparkles class="w-3.5 h-3.5 text-pink-400 animate-spin-slow" />
+          <span>PREPARING HACKATHON • {{ progress }}%</span>
+        </div>
       </div>
     </div>
 
@@ -110,7 +126,7 @@
         <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#0d0c1d]/90 border border-purple-500/40 backdrop-blur-xl mb-6 shadow-[0_0_20px_rgba(168,85,247,0.2)] animate-fade-in-up hover:border-purple-400 transition-colors">
           <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
           <span class="text-xs font-mono font-bold tracking-widest text-purple-200 uppercase">
-            REGISTRATION OPEN • SEPTEMBER 2026
+            REGISTRATION OPEN • OCTOBER 3,4 2026
           </span>
         </div>
 
@@ -123,6 +139,66 @@
         <h5 class="block mt-4 text-2xl sm:text-4xl lg:text-5xl font-chakra-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-pink-300 to-cyan-300 animate-subtitle-glow drop-shadow-[0_5px_20px_rgba(168,85,247,0.5)]">
           Build.Launch.Scale
         </h5>
+
+        <!-- FUTURISTIC HERO COUNTDOWN TIMER (OCTOBER 3 2026) -->
+        <div class="mt-8 mb-2 w-full max-w-xl mx-auto">
+          <div class="relative group">
+            <!-- Glowing background aura -->
+            <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-600 via-pink-600 to-cyan-500 rounded-3xl blur opacity-35 group-hover:opacity-75 transition duration-500"></div>
+            
+            <div class="relative bg-[#090816]/90 border border-purple-500/30 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-5 sm:p-6 shadow-[0_10px_40px_rgba(0,0,0,0.8)]">
+              <!-- Header Label -->
+              <div class="flex items-center justify-center gap-2 mb-4 text-xs font-mono font-bold tracking-[0.2em] text-purple-300 uppercase">
+                <Clock class="w-4 h-4 text-pink-400 animate-pulse" />
+                <span>HACKATHON STARTS IN</span>
+                <Flame class="w-4 h-4 text-amber-400 animate-pulse" />
+              </div>
+
+              <!-- 4 Counter Grid Blocks -->
+              <div class="grid grid-cols-4 gap-2.5 sm:gap-4">
+                <!-- Days -->
+                <div class="flex flex-col items-center justify-center bg-white/[0.04] border border-white/10 rounded-xl sm:rounded-2xl p-2.5 sm:p-4 hover:border-purple-500/50 hover:bg-purple-950/30 transition-all">
+                  <span class="font-chakra-bold font-bold text-3xl sm:text-5xl text-white tracking-tight drop-shadow-[0_0_15px_rgba(168,85,247,0.6)]">
+                    {{ timeLeft.days }}
+                  </span>
+                  <span class="text-[10px] sm:text-xs font-mono font-bold tracking-widest text-purple-300/80 uppercase mt-1">
+                    Days
+                  </span>
+                </div>
+
+                <!-- Hours -->
+                <div class="flex flex-col items-center justify-center bg-white/[0.04] border border-white/10 rounded-xl sm:rounded-2xl p-2.5 sm:p-4 hover:border-pink-500/50 hover:bg-pink-950/30 transition-all">
+                  <span class="font-chakra-bold font-bold text-3xl sm:text-5xl text-white tracking-tight drop-shadow-[0_0_15px_rgba(236,72,153,0.6)]">
+                    {{ timeLeft.hours }}
+                  </span>
+                  <span class="text-[10px] sm:text-xs font-mono font-bold tracking-widest text-pink-300/80 uppercase mt-1">
+                    Hours
+                  </span>
+                </div>
+
+                <!-- Minutes -->
+                <div class="flex flex-col items-center justify-center bg-white/[0.04] border border-white/10 rounded-xl sm:rounded-2xl p-2.5 sm:p-4 hover:border-cyan-500/50 hover:bg-cyan-950/30 transition-all">
+                  <span class="font-chakra-bold font-bold text-3xl sm:text-5xl text-white tracking-tight drop-shadow-[0_0_15px_rgba(6,182,212,0.6)]">
+                    {{ timeLeft.minutes }}
+                  </span>
+                  <span class="text-[10px] sm:text-xs font-mono font-bold tracking-widest text-cyan-300/80 uppercase mt-1">
+                    Mins
+                  </span>
+                </div>
+
+                <!-- Seconds -->
+                <div class="flex flex-col items-center justify-center bg-white/[0.04] border border-white/10 rounded-xl sm:rounded-2xl p-2.5 sm:p-4 hover:border-amber-500/50 hover:bg-amber-950/30 transition-all">
+                  <span class="font-chakra-bold font-bold text-3xl sm:text-5xl text-purple-300 tracking-tight drop-shadow-[0_0_15px_rgba(168,85,247,0.8)] animate-pulse">
+                    {{ timeLeft.seconds }}
+                  </span>
+                  <span class="text-[10px] sm:text-xs font-mono font-bold tracking-widest text-purple-300 uppercase mt-1">
+                    Secs
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 
@@ -181,22 +257,22 @@
           <div class="flex items-center gap-10 sm:gap-16 shrink-0 pr-10 sm:pr-16 text-xs sm:text-sm font-chakra-bold tracking-[0.25em] uppercase text-white/90">
             <span class="flex items-center gap-3">
               <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
-              SEPTEMBER 2026
+              OCTOBER 3,4 2026
             </span>
             <span class="text-purple-500/40">✦</span>
             <span class="flex items-center gap-3 text-purple-300">
               <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
-              COMING SOON
+              REGISTRATION OPEN
             </span>
             <span class="text-purple-500/40">✦</span>
             <span class="flex items-center gap-3">
               <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
-              SEPTEMBER 2026
+              OCTOBER 3,4 2026
             </span>
             <span class="text-purple-500/40">✦</span>
             <span class="flex items-center gap-3 text-purple-300">
               <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
-              COMING SOON
+              REGISTRATION OPEN
             </span>
             <span class="text-purple-500/40">✦</span>
           </div>
@@ -205,22 +281,22 @@
           <div class="flex items-center gap-10 sm:gap-16 shrink-0 pr-10 sm:pr-16 text-xs sm:text-sm font-chakra-bold tracking-[0.25em] uppercase text-white/90" aria-hidden="true">
             <span class="flex items-center gap-3">
               <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
-              SEPTEMBER 2026
+              OCTOBER 3,4 2026
             </span>
             <span class="text-purple-500/40">✦</span>
             <span class="flex items-center gap-3 text-purple-300">
               <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
-              COMING SOON
+              REGISTRATION OPEN
             </span>
             <span class="text-purple-500/40">✦</span>
             <span class="flex items-center gap-3">
               <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
-              SEPTEMBER 2026
+              OCTOBER 3,4 2026
             </span>
             <span class="text-purple-500/40">✦</span>
             <span class="flex items-center gap-3 text-purple-300">
               <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
-              COMING SOON
+              REGISTRATION OPEN
             </span>
             <span class="text-purple-500/40">✦</span>
           </div>
@@ -585,12 +661,58 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-import { Rocket, Wallet, Gift, ArrowRight, Users, Building2, Play, Trophy, Sparkles, Code2, Cpu, Instagram, Twitter, Youtube, Linkedin, ExternalLink } from 'lucide-vue-next'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { Rocket, Wallet, Gift, ArrowRight, Users, Building2, Play, Trophy, Sparkles, Code2, Cpu, Instagram, Twitter, Youtube, Linkedin, ExternalLink, Clock, Flame, Quote } from 'lucide-vue-next'
 
 // Page Loading Preloader State
 const isLoading = ref(true)
 const progress = ref(0)
+
+// Preloader Builder Quotes
+const quotes = [
+  { text: "The best way to predict the future is to invent it.", author: "Alan Kay" },
+  { text: "Great products aren't built in quiet moments. They are forged in intense focus.", author: "KPH Hackathon '26" },
+  { text: "Ideas are cheap. Execution is everything.", author: "John Doerr" },
+  { text: "Make something people want, then build fast.", author: "Paul Graham" },
+  { text: "Kerala's biggest product revolution begins October 3, 2026.", author: "KPH Community" }
+]
+const currentQuoteIndex = ref(0)
+const currentQuote = computed(() => quotes[currentQuoteIndex.value])
+
+// Hero Countdown Timer towards OCTOBER 3 2026
+const targetDate = new Date('2026-10-03T00:00:00')
+const timeLeft = ref({
+  days: '00',
+  hours: '00',
+  minutes: '00',
+  seconds: '00'
+})
+
+let countdownTimer = null
+let quoteTimer = null
+
+const calculateTimeLeft = () => {
+  const now = new Date().getTime()
+  const difference = targetDate.getTime() - now
+
+  if (difference <= 0) {
+    timeLeft.value = { days: '00', hours: '00', minutes: '00', seconds: '00' }
+    if (countdownTimer) clearInterval(countdownTimer)
+    return
+  }
+
+  const d = Math.floor(difference / (1000 * 60 * 60 * 24))
+  const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+  const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))
+  const s = Math.floor((difference % (1000 * 60)) / 1000)
+
+  timeLeft.value = {
+    days: String(d).padStart(2, '0'),
+    hours: String(h).padStart(2, '0'),
+    minutes: String(m).padStart(2, '0'),
+    seconds: String(s).padStart(2, '0')
+  }
+}
 
 // Mouse movement interactive spotlight
 const mouseX = ref(0)
@@ -611,18 +733,33 @@ const tracks = [
 ]
 
 onMounted(() => {
+  // Initialize countdown calculation
+  calculateTimeLeft()
+  countdownTimer = setInterval(calculateTimeLeft, 1000)
+
+  // Rotate quotes during preloader
+  quoteTimer = setInterval(() => {
+    currentQuoteIndex.value = (currentQuoteIndex.value + 1) % quotes.length
+  }, 2000)
+
   // Preloader progress simulation
-  const interval = setInterval(() => {
+  const progressInterval = setInterval(() => {
     if (progress.value < 100) {
       progress.value += Math.floor(Math.random() * 25) + 18
       if (progress.value > 100) progress.value = 100
     } else {
-      clearInterval(interval)
+      clearInterval(progressInterval)
+      if (quoteTimer) clearInterval(quoteTimer)
       setTimeout(() => {
         isLoading.value = false
       }, 350)
     }
   }, 120)
+})
+
+onUnmounted(() => {
+  if (countdownTimer) clearInterval(countdownTimer)
+  if (quoteTimer) clearInterval(quoteTimer)
 })
 
 // Previous Hackathons video links
@@ -652,11 +789,11 @@ useHead({
   htmlAttrs: {
     lang: 'en'
   },
-  title: 'KPH Hackathon - Build and Launch | September 2026',
+  title: 'KPH Hackathon - Build and Launch | October 3, 2026',
   meta: [
-    { name: 'description', content: 'Join the KPH Hackathon in September 2026. Build and launch your product with funding, mentorship, GTM support, and exciting prizes.' },
-    { property: 'og:title', content: 'KPH Hackathon - Build and Launch | September 2026' },
-    { property: 'og:description', content: 'Join the KPH Hackathon. Build and launch your product with funding, mentorship, GTM support, and exciting prizes.' },
+    { name: 'description', content: 'Join the KPH Hackathon on October 3, 2026. Build and launch your product with funding, mentorship, GTM support, and exciting prizes.' },
+    { property: 'og:title', content: 'KPH Hackathon - Build and Launch | October 3, 2026' },
+    { property: 'og:description', content: 'Join the KPH Hackathon on October 3, 2026. Build and launch your product with funding, mentorship, GTM support, and exciting prizes.' },
     { property: 'og:url', content: 'https://kph.club/archives/hack' },
     { property: 'og:image', content: '/accelerator-og.png' },
     { property: 'og:type', content: 'website' }
@@ -786,5 +923,23 @@ const sponsorCTA = () => {
 
 .animate-spin-reverse {
   animation: spinReverse 1.5s linear infinite;
+}
+
+/* Preloader Quote Fade Animation */
+@keyframes quoteFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.animate-quote-fade {
+  animation: quoteFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 </style>
