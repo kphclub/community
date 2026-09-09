@@ -77,7 +77,10 @@
       <!-- Center Pill Nav Menu -->
       <nav class="hidden md:flex items-center gap-7 bg-[#0c0b16]/80 backdrop-blur-xl border border-white/10 rounded-full px-8 py-2.5 shadow-[0_8px_30px_rgba(0,0,0,0.8)] text-xs font-mono text-neutral-300">
         <a href="#about" class="hover:text-white transition-colors">Why Join</a>
-        <a href="#highlights" class="hover:text-white transition-colors">Previous Hackathons</a>      </nav>
+        <a href="#why-invite-only" class="hover:text-white transition-colors">Why Invite Only?</a>
+        <a href="#experience" class="hover:text-white transition-colors">Hackathon Journey</a>
+        <a href="#highlights" class="hover:text-white transition-colors">Previous Hackathons</a>
+      </nav>
 
       <!-- Right Pill CTA Button -->
       <a
@@ -209,16 +212,16 @@
             rel="noopener noreferrer"
             class="group inline-flex items-center gap-3 rounded-full bg-white px-9 py-4 text-base font-bold text-gray-950 hover:bg-neutral-200 hover:scale-105 transition-all duration-300 shadow-[0_0_35px_rgba(255,255,255,0.3)]"
           >
-            <span>JOIN NOW</span>
+            <span>APPLY TO JOIN</span>
             <ArrowRight class="h-4 w-4 group-hover:translate-x-1.5 transition-transform" />
           </a>
 
           <a
-            href="#about"
+            href="#why-invite-only"
             class="inline-flex items-center gap-2.5 rounded-full bg-[#121026]/90 border border-purple-500/30 px-7 py-4 text-base font-semibold text-purple-200 hover:text-white hover:border-purple-400 hover:bg-purple-950/50 hover:scale-105 transition-all duration-300 backdrop-blur-xl"
           >
             <Trophy class="h-4 w-4 text-purple-400" />
-            <span>Why Join</span>
+            <span>WHY INVITE ONLY?</span>
           </a>
         </div>
         <p class="mt-4 text-xs font-medium text-purple-300/90 tracking-wide">
@@ -359,6 +362,238 @@
               <p class="text-sm text-neutral-400 leading-relaxed">
                 Win cash prizes, tools, and exclusive opportunities for your product/startup.
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY INVITE ONLY SECTION -->
+    <section id="why-invite-only" class="py-24 bg-[#030306] border-t border-white/10 relative overflow-hidden text-neutral-100">
+      <!-- Ambient background lighting glow -->
+      <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-purple-900/15 blur-[160px] pointer-events-none rounded-full"></div>
+      <div class="absolute inset-0 z-0 opacity-20 mix-blend-screen pointer-events-none">
+        <img src="/pri-sp-vid.gif" alt="Background Pattern" class="w-full h-full object-cover object-center" />
+        <div class="absolute inset-0 bg-gradient-to-b from-[#030306] via-transparent to-[#030306]"></div>
+      </div>
+
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12">
+        <!-- Main Header & Paragraphs -->
+        <div class="space-y-6">
+          <!-- Eyebrow -->
+          <span class="text-xs font-mono font-semibold uppercase tracking-[0.3em] text-purple-400 block">
+            WHY INVITE ONLY?
+          </span>
+
+          <!-- Main H1 Heading (Customized per user directive) -->
+          <h2 class="text-4xl sm:text-6xl lg:text-7xl font-chakra-bold font-bold text-white tracking-tight leading-[1.08]">
+            Because the right people build <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-purple-300 to-pink-400">together.</span>
+          </h2>
+
+          <!-- Paragraph Content -->
+          <div class="space-y-4 pt-2 text-base sm:text-lg text-neutral-300 leading-relaxed max-w-3xl">
+            <p>
+              We carefully select builders who are <strong class="text-white font-semibold">serious about what they're building</strong> and <strong class="text-white font-semibold">serious about taking it further.</strong>
+            </p>
+            <p>
+              A curated room creates <strong class="text-white font-semibold">better conversations, sharper feedback, and meaningful opportunities</strong> with founders, investors, mentors, and fellow builders.
+            </p>
+          </div>
+        </div>
+
+        <!-- Statement Text -->
+        <div class="pt-4 space-y-2">
+          <h3 class="text-2xl sm:text-4xl lg:text-5xl font-chakra-bold font-bold text-white tracking-tight">
+            We're not trying to fill a room.
+          </h3>
+          <h3 class="text-2xl sm:text-4xl lg:text-5xl font-chakra-bold font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-purple-300 tracking-tight">
+            We're trying to build the right one.
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE EXPERIENCE (PATHWAY) SECTION -->
+    <section id="experience" class="py-24 bg-[#030306] border-t border-white/10 relative overflow-hidden text-neutral-100">
+      <!-- Background Ambient Glow -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[450px] bg-purple-900/15 blur-[180px] pointer-events-none rounded-full"></div>
+      <div class="absolute inset-0 z-0 opacity-20 mix-blend-screen pointer-events-none">
+        <img src="/pri-sp-vid.gif" alt="Background Pattern" class="w-full h-full object-cover object-center" />
+        <div class="absolute inset-0 bg-gradient-to-b from-[#030306] via-transparent to-[#030306]"></div>
+      </div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Section Header -->
+        <div class="mb-16">
+          <span class="text-xs font-mono font-semibold uppercase tracking-[0.3em] text-purple-400 block mb-3">
+            THE EXPERIENCE
+          </span>
+          <h2 class="text-4xl sm:text-6xl lg:text-7xl font-chakra-bold font-bold text-white tracking-tight leading-[1.08]">
+            Here's what happens at <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-purple-300">KPH Hackathon.</span>
+          </h2>
+        </div>
+
+        <!-- Pathway Timeline Container -->
+        <div class="relative mt-12">
+          <!-- Desktop Connecting Pathway Line with Animated Shimmer -->
+          <div class="hidden md:block absolute top-[22px] left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-purple-950 via-purple-500/50 to-purple-950 z-0">
+            <!-- Traveling Glow Particle Beam -->
+            <div class="absolute top-1/2 -translate-y-1/2 h-1 w-28 bg-gradient-to-r from-transparent via-purple-400 to-transparent animate-path-beam"></div>
+          </div>
+
+          <!-- 4 Steps Pathway Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+            <!-- Step 1 -->
+            <div class="group flex flex-col space-y-4">
+              <!-- Step Node & Number Header -->
+              <div class="flex items-center gap-3">
+                <div class="relative flex items-center justify-center">
+                  <div class="w-11 h-11 rounded-full bg-[#0d0b22] border-2 border-purple-500/50 group-hover:border-purple-400 group-hover:shadow-[0_0_18px_rgba(168,85,247,0.8)] transition-all duration-300 flex items-center justify-center">
+                    <span class="font-mono text-xs font-bold text-purple-300">01</span>
+                  </div>
+                </div>
+                <div class="hidden md:block h-0.5 flex-1 bg-purple-500/20"></div>
+              </div>
+
+              <!-- Graphic Visual Card -->
+              <div class="w-full aspect-[4/3] rounded-2xl bg-[#090816] border border-purple-500/30 p-4 relative overflow-hidden group-hover:border-purple-400/70 group-hover:shadow-[0_10px_35px_rgba(168,85,247,0.25)] transition-all duration-500 flex flex-col justify-between">
+                <div class="flex items-center gap-1.5 pb-2 border-b border-white/10">
+                  <div class="w-2.5 h-2.5 rounded-full bg-pink-500/80"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></div>
+                </div>
+                <div class="space-y-2.5 my-auto">
+                  <div class="h-3 w-3/4 rounded bg-purple-400/20"></div>
+                  <div class="h-7 w-full rounded-lg bg-white/5 border border-white/10 px-3 flex items-center">
+                    <div class="h-2 w-1/2 bg-purple-400/40 rounded"></div>
+                  </div>
+                  <div class="h-7 w-full rounded-lg bg-white/5 border border-white/10 px-3 flex items-center">
+                    <div class="h-2 w-2/3 bg-purple-400/40 rounded"></div>
+                  </div>
+                </div>
+                <div class="w-full py-2 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white font-mono text-[11px] font-bold text-center tracking-widest uppercase shadow-[0_0_15px_rgba(168,85,247,0.5)] group-hover:scale-[1.02] transition-transform">
+                  APPLY
+                </div>
+              </div>
+
+              <!-- Text Content -->
+              <div>
+                <h3 class="text-xl font-chakra-bold font-bold text-white group-hover:text-purple-300 transition-colors uppercase tracking-wide">
+                  APPLY
+                </h3>
+                <p class="mt-2 text-sm text-neutral-400 leading-relaxed">
+                  Submit your application and tell us what you're building.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="group flex flex-col space-y-4">
+              <!-- Step Node & Number Header -->
+              <div class="flex items-center gap-3">
+                <div class="relative flex items-center justify-center">
+                  <div class="w-11 h-11 rounded-full bg-[#0d0b22] border-2 border-purple-500/50 group-hover:border-purple-400 group-hover:shadow-[0_0_18px_rgba(168,85,247,0.8)] transition-all duration-300 flex items-center justify-center">
+                    <span class="font-mono text-xs font-bold text-purple-300">02</span>
+                  </div>
+                </div>
+                <div class="hidden md:block h-0.5 flex-1 bg-purple-500/20"></div>
+              </div>
+
+              <!-- Graphic Visual Card -->
+              <div class="w-full aspect-[4/3] rounded-2xl bg-[#090816] border border-purple-500/30 p-4 relative overflow-hidden group-hover:border-purple-400/70 group-hover:shadow-[0_10px_35px_rgba(168,85,247,0.25)] transition-all duration-500 flex items-center justify-center">
+                <div class="relative w-full max-w-[150px] aspect-[1.4/1]">
+                  <div class="absolute inset-0 rounded-xl bg-[#0c0a1f] border border-purple-500/30"></div>
+                  <div class="absolute inset-x-3 -top-3 bottom-3 rounded-lg bg-gradient-to-b from-[#181438] to-[#0d0a22] border border-purple-400/40 p-3 flex flex-col items-center justify-center text-center shadow-[0_0_20px_rgba(168,85,247,0.4)] group-hover:-translate-y-2 transition-transform duration-500">
+                    <span class="font-chakra-bold font-bold text-sm text-white tracking-widest">KPH</span>
+                    <span class="text-[9px] font-mono text-purple-300 tracking-wider uppercase mt-1">YOU'RE INVITED</span>
+                  </div>
+                  <div class="absolute inset-x-0 bottom-0 h-1/2 bg-[#090718]/90 border-t border-purple-500/30 rounded-b-xl backdrop-blur-xs"></div>
+                </div>
+              </div>
+
+              <!-- Text Content -->
+              <div>
+                <h3 class="text-xl font-chakra-bold font-bold text-white group-hover:text-purple-300 transition-colors uppercase tracking-wide">
+                  GET INVITED
+                </h3>
+                <p class="mt-2 text-sm text-neutral-400 leading-relaxed">
+                  Selected builders receive their invitation to KPH Hackathon '26.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="group flex flex-col space-y-4">
+              <!-- Step Node & Number Header -->
+              <div class="flex items-center gap-3">
+                <div class="relative flex items-center justify-center">
+                  <div class="w-11 h-11 rounded-full bg-[#0d0b22] border-2 border-purple-500/50 group-hover:border-purple-400 group-hover:shadow-[0_0_18px_rgba(168,85,247,0.8)] transition-all duration-300 flex items-center justify-center">
+                    <span class="font-mono text-xs font-bold text-purple-300">03</span>
+                  </div>
+                </div>
+                <div class="hidden md:block h-0.5 flex-1 bg-purple-500/20"></div>
+              </div>
+
+              <!-- Graphic Visual Card -->
+              <div class="w-full aspect-[4/3] rounded-2xl bg-[#090816] border border-purple-500/30 p-4 relative overflow-hidden group-hover:border-purple-400/70 group-hover:shadow-[0_10px_35px_rgba(168,85,247,0.25)] transition-all duration-500 flex flex-col items-center justify-center">
+                <div class="w-4/5 aspect-[1.5/1] rounded-t-xl bg-[#0d0b24] border border-purple-500/40 p-3 flex flex-col items-center justify-center relative shadow-[0_0_25px_rgba(168,85,247,0.3)]">
+                  <div class="text-purple-300 font-mono text-2xl font-bold tracking-widest group-hover:scale-110 transition-transform">&lt;/&gt;</div>
+                  <div class="absolute bottom-2 left-3 right-3 flex items-center justify-between text-[8px] font-mono text-neutral-500">
+                    <span>BUILDING...</span>
+                    <span class="text-emerald-400">24H</span>
+                  </div>
+                </div>
+                <div class="w-full h-2.5 rounded-b-lg bg-[#151230] border-t border-purple-500/40 relative">
+                  <div class="w-12 h-1 bg-purple-400/40 mx-auto rounded-full mt-0.5"></div>
+                </div>
+              </div>
+
+              <!-- Text Content -->
+              <div>
+                <h3 class="text-xl font-chakra-bold font-bold text-white group-hover:text-purple-300 transition-colors uppercase tracking-wide">
+                  BUILD · 24 HOURS
+                </h3>
+                <p class="mt-2 text-sm text-neutral-400 leading-relaxed">
+                  One full day to build, iterate, test, and turn your idea into a working product.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="group flex flex-col space-y-4">
+              <!-- Step Node & Number Header -->
+              <div class="flex items-center gap-3">
+                <div class="relative flex items-center justify-center">
+                  <div class="w-11 h-11 rounded-full bg-[#0d0b22] border-2 border-purple-500/50 group-hover:border-purple-400 group-hover:shadow-[0_0_18px_rgba(168,85,247,0.8)] transition-all duration-300 flex items-center justify-center">
+                    <span class="font-mono text-xs font-bold text-purple-300">04</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Graphic Visual Card -->
+              <div class="w-full aspect-[4/3] rounded-2xl bg-[#090816] border border-purple-500/30 p-4 relative overflow-hidden group-hover:border-purple-400/70 group-hover:shadow-[0_10px_35px_rgba(168,85,247,0.25)] transition-all duration-500 flex flex-col items-center justify-center">
+                <div class="w-4/5 aspect-[1.8/1] rounded-xl bg-gradient-to-br from-[#1c1545] to-[#0b0820] border border-purple-400/50 flex flex-col items-center justify-center shadow-[0_0_30px_rgba(168,85,247,0.4)] relative">
+                  <span class="font-chakra-bold font-bold text-base text-white tracking-widest">KPH</span>
+                  <span class="text-[8px] font-mono text-pink-400 tracking-widest uppercase">DEMO DAY</span>
+                </div>
+                <div class="w-full flex justify-center gap-1.5 mt-3 opacity-60">
+                  <div class="w-4 h-3 rounded-t bg-purple-950 border border-purple-800"></div>
+                  <div class="w-4 h-3 rounded-t bg-purple-950 border border-purple-800"></div>
+                  <div class="w-4 h-3 rounded-t bg-purple-950 border border-purple-800"></div>
+                  <div class="w-4 h-3 rounded-t bg-purple-950 border border-purple-800"></div>
+                  <div class="w-4 h-3 rounded-t bg-purple-950 border border-purple-800"></div>
+                </div>
+              </div>
+
+              <!-- Text Content -->
+              <div>
+                <h3 class="text-xl font-chakra-bold font-bold text-white group-hover:text-purple-300 transition-colors uppercase tracking-wide">
+                  DEMO DAY
+                </h3>
+                <p class="mt-2 text-sm text-neutral-400 leading-relaxed">
+                  Show what you built, present your product, and get feedback from the room.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -921,5 +1156,17 @@ const sponsorCTA = () => {
 
 .animate-quote-fade {
   animation: quoteFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Pathway Beam Animation */
+@keyframes pathBeam {
+  0% { left: 0%; opacity: 0; }
+  15% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { left: 100%; opacity: 0; }
+}
+
+.animate-path-beam {
+  animation: pathBeam 3.5s linear infinite;
 }
 </style>
