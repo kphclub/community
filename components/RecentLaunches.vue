@@ -87,7 +87,7 @@ const launches = ref([])
 const loading = ref(true)
 const error = ref(false)
 
-const apiUrl = 'https://kph-mafia.microcompany.workers.dev/api/products';
+const apiUrl = 'https://kph.shyjal.com/api/products';
 
 function formatDate(utcDate) {
   if (!utcDate) return 'Today';
